@@ -1,0 +1,828 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology"
+     xml:base="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:LaptopOntology="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#duration -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasBrand">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasDisplay -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasDisplay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Display"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasGraphicsCard -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasGraphicsCard">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Graphic_Card"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasHardDrive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasHardDrive">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Hard_Drive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#model"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasOperatingSystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasOperatingSystem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#operating_system"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#prices"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasProcessor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasProcessor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#processor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasRAM -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasRAM">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#RAM"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasBatteryLife -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasBatteryLife">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasColor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasConnectivityOption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasConnectivityOption">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasDimension -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasDimension">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasNumPorts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasNumPorts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasPriceRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasPriceRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasTouchScreen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasTouchScreen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasUSBType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasUSBType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#hasWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#processor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_GC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_GC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Graphic_Card"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Display -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Display"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Graphic_Card -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Graphic_Card"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#HDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#HDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Hard_Drive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Hard_Drive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Hard_Drive"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Intel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Intel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#processor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Graphic_Card"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#RAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#RAM"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Resolution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Resolution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Display"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#SDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#SDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Hard_Drive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Screen_Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Screen_Size">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Display"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#business-laptop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#business-laptop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#gaming-laptop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#gaming-laptop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#operating_system -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#operating_system"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#prices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#prices"/>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#processor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#processor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_Radeon_RX_6600_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_Radeon_RX_6600_XT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_GC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_Radeon_RX_6750_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_Radeon_RX_6750_XT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_GC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_Radeon_RX_6950_XT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_Radeon_RX_6950_XT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD_GC"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Accer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Accer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands"/>
+        <LaptopOntology:hasDisplay rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#14_inch"/>
+        <LaptopOntology:hasHardDrive rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#128_Gb"/>
+        <LaptopOntology:hasOperatingSystem rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Linux"/>
+        <LaptopOntology:hasPrice rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#$500"/>
+        <LaptopOntology:hasBatteryLife rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</LaptopOntology:hasBatteryLife>
+        <LaptopOntology:hasColor>black</LaptopOntology:hasColor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands"/>
+        <LaptopOntology:hasOperatingSystem rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#MacOs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Asus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Asus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Asus_ROG_Zephyrus_G14_2022 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Asus_ROG_Zephyrus_G14_2022">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#gaming-laptop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Athlon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Athlon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Core_i3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Core_i3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Intel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Dell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Dell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Dell_XPS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Dell_XPS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#business-laptop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Dell_XPS_13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Dell_XPS_13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#laptop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Elitebook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Elitebook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Hp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Hp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Inspiron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Inspiron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#business-laptop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#IntelCore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#IntelCore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Intel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Intel_Xeon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Intel_Xeon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Intel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Latitude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Latitude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#business-laptop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Lenovo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Lenovo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#brands"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Linux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Linux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#operating_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#MacBook -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#MacBook">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#MacOs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#MacOs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#operating_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Macbook_Pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Macbook_Pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia_Quadro_RTX_A6000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia_Quadro_RTX_A6000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia_RTX_3090_Ti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia_RTX_3090_Ti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia_RTX_4090 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia_RTX_4090">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Nvidia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Razer_Blade_15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Razer_Blade_15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#gaming-laptop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Thinkpad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Thinkpad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Windows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Windows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#operating_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Zen_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Zen_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#AMD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#ubantu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#ubantu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#operating_system"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#$1000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#$1000">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#prices"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#$1200 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#$1200">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#prices"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#$500 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#$500">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#prices"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#1_TB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#1_TB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#HDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#12_Gb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#12_Gb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#RAM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#128_GB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#128_GB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#SDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#128_Gb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#128_Gb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#HDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#1280×800 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#1280×800">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Resolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#1366×768 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#1366×768">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Resolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#14_inch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#14_inch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Screen_Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#15.5_inch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#15.5_inch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Screen_Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#16_Gb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#16_Gb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#RAM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#16_inch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#16_inch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Screen_Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#1600×900 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#1600×900">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Resolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#2k -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#2k">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Resolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#256_GB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#256_GB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#SDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#300_Gb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#300_Gb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#HDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#4_Gb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#4_Gb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#RAM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#4k -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#4k">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Resolution"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#512_GB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#512_GB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#SDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#512_Gb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#512_Gb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#HDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#8_Gb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#8_Gb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#RAM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Asus_ROG_Zephyrus_M16_(2023) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Asus_ROG_Zephyrus_M16_(2023)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#gaming-laptop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Lenovo_Legion_Pro_7i_(Gen8) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#Lenovo_Legion_Pro_7i_(Gen8)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/computerhouse/ontologies/2023/3/LaptopOntology#gaming-laptop"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
